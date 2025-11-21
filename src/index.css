@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Show full text in inputs/textarea for PDF */
+.pdf-mode input,
+.pdf-mode textarea {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+  pointer-events: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: auto !important;
+  line-height: 1.2 !important;
+  vertical-align: top;
+  display: block;
+  white-space: pre-wrap;
+  font-size: 14px; /* Match your design */
+  width: 100% !important;
+  resize: none;
+}
+
+
+.pdf-mode .hide-in-pdf {
+  display: none !important;
+}
